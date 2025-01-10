@@ -13,8 +13,8 @@ import net.bytebuddy.description.modifier.SynchronizationState;
 public class array_list {
 
 	public static void main(String[] args) {
-//		first_and_last_array_list_value();
-		collection_sort();
+		first_and_last_array_list_value();
+		//collection_sort();
 	}
 	
 	
@@ -49,7 +49,8 @@ public class array_list {
 		System.err.println("Index of : "+arr.indexOf("Anand"));
 		System.err.println("Is Empty : "+arr.isEmpty());
 		System.err.println("Last index of : "+arr.lastIndexOf("Allan"));
-		System.err.println("Remove : "+arr.remove(6));
+		System.err.println("-------------Remove : "+arr.remove(arr.indexOf("Anand")));
+		System.out.println(arr);
 		System.err.println("Size : "+arr.size());
 		System.err.println("Hash code : "+arr.hashCode());
 		System.err.println(arr2.removeAll(arr2));
@@ -73,7 +74,7 @@ public class array_list {
 		System.out.println(ret1);
 		ret1.replaceAll(f -> f.toUpperCase());
 		System.out.println(ret1);
-		arr.clear();		
+		arr.clear();	
 		
 	}
 	

@@ -9,8 +9,11 @@ public class hashmap {
     public hashmap() {
 		System.err.println(" Constructor");
 	}
+    
+    static int iii;
 	
     static {
+    	iii = 10;
 		System.out.println("Hi");
 		System.out.println("Hello");
 	}
@@ -18,9 +21,12 @@ public class hashmap {
     
     
 	public static void main(String[] args) {
-		hashmap g = new hashmap();
+		/*hashmap g = new hashmap();
 		mapp();
-		map3();
+		map3();*/
+	
+		
+		System.out.println(iii);
 	}
 	
 	public static void mapp() {
@@ -28,6 +34,8 @@ public class hashmap {
 		m.put("Name", "Allan");
 		m.put("Hobby", "Fishing");
 		m.put("occupatino", "BPO");
+		
+		
 		
 		Set<String> s = m.keySet();
 		for(String h : s) {
@@ -70,6 +78,5 @@ public class hashmap {
 		m.put("Hobby", "Fishing");
 		m.put("occupatino", "BPO");
 		
-		m.
 	}
 }
