@@ -42,7 +42,29 @@ public class loops {
 		}
 		
 		
+		String key ="animals";
+		switch(key) {
+		case "birds":
+			System.out.println("displayig birds");
+			break;
+		case "animals":
+			System.out.println("diaplaying animals");
+			break;
+			
+		default:
+			System.out.println("nothing to diaply");
+			break;
+		}
 		
+
+		try {
+			
+		} catch (Exception e) {
+			
+		}
+		finally {
+			System.out.println("hi");
+		}
 		
 	}
 }

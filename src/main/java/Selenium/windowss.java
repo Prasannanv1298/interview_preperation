@@ -1,9 +1,11 @@
 package Selenium;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -41,7 +43,7 @@ public class windowss {
 		d.manage().window().minimize();
 		d.quit();
 		
-		
+
 	}
 
 }

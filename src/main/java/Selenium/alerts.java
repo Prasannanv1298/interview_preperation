@@ -39,6 +39,8 @@ public class alerts {
 		js.executeScript("arguments[0].click();", click);
 
 		Alert alr = d.switchTo().alert();
+//		Alert al = ww.until(ExpectedConditions.alertIsPresent());
+//		al.accept();
 		System.out.println(alr.getText());
 		alr.accept();
 		d.quit();
@@ -104,4 +106,12 @@ public class alerts {
 		d.quit();
 	}
 
+	
+	
+	
+	public void imps() {
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+	}
+	
+	
 }

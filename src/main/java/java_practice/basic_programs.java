@@ -2,6 +2,7 @@ package java_practice;
 
 public class basic_programs {
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		//		odd_or_even(0);
 		//		prime_or_not(9);

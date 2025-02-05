@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.alerts">
+      <class name="Selenium.Optionss">
         <methods>
-          <include name="sendkey"/>
+          <include name="launch_browser"/>
+          <include name="new_window"/>
         </methods>
-      </class> <!-- Selenium.alerts -->
+      </class> <!-- Selenium.Optionss -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

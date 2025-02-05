@@ -182,11 +182,11 @@ public class arrays {
 	
 	
 	public static void finding_unique_in_array() {
-		Integer[] arr = {1,2,3,4,4,5,5,6,1,8};
+Integer[] arr = {1,2,3,4,4,5,5,6,1,8};
 		
 		System.out.println("Finding unique number in array");
 		
-		for(int i =0 ;i<=arr.length-1 ; i++) {
+for(int i =0 ;i<=arr.length-1 ; i++) {
 			int n=0;
 			
 			for(int j=0;j<=arr.length-1; j++) {
