@@ -1,14 +1,8 @@
 package Collect;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-
-import io.cucumber.java.lu.a.as;
-import net.bytebuddy.description.modifier.SynchronizationState;
 
 public class array_list {
 
