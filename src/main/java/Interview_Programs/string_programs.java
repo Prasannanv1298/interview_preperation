@@ -1,4 +1,4 @@
-package java_practice;
+package Interview_Programs;
 
 import java.util.HashMap;
 import java.util.Map;
