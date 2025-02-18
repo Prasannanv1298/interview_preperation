@@ -68,7 +68,7 @@ public class string_programs {
         }
 	}
 
-    @Test
+    @Test(enabled = false)
 	public void reverse_the_sentance() {
 		String original = "My name is andy";
 		String[] original_split= original.split(" ");
@@ -79,9 +79,12 @@ public class string_programs {
 		System.out.println(reverser_sentance);
 	}
 
-
-
-
+    @Test
+    public void reverse_word() {
+    	String str = "Java is fun";
+    	String reversed = String.join(" ", new StringBuilder(str).reverse().toString().split(" "));
+    	System.out.println(reversed);
+    }
 
 
 

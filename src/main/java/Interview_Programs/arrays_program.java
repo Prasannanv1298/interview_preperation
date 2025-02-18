@@ -2,14 +2,21 @@ package Interview_Programs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
 import java.util.Set;
+import java.util.stream.IntStream;
+
+import org.testng.annotations.Test;
 
 public class arrays_program {
 
-	public static void duplicate_in_array_using_set() {
+	@Test(enabled = false)
+	public void duplicate_in_array_using_set() {
 		int[] arr = {1,2,3,4,5,4,3,4};
 		Set<Integer> common = new HashSet<Integer>();
 
@@ -22,7 +29,8 @@ public class arrays_program {
 	}
 
 
-	public static void common_values_in_two_array() {
+	@Test(enabled = false)
+	public void common_values_in_two_array() {
 		int[] arr1 = {1,2,3,4,5};
 		int[] arr2 = {2,4,6,3,7,8};
 
@@ -44,17 +52,8 @@ public class arrays_program {
 		}
 	}
 
-
-
-	public static void first_and_last_array_value() {
-		int[] arr1= {1,2,3,4,3,2,5,77,8,99,88};
-
-		System.out.println("First value : "+arr1[0]);
-		System.out.println("Last value : "+arr1[arr1.length-1]);
-	}
-
-
-	public static void arr_sort() {
+	@Test(enabled = false)
+	public void arr_sort() {
 		Integer[] arr= {3,4,6,1,2,6,7,8,5,2};
 
 		System.out.println("Array - Ascending order");
@@ -66,7 +65,8 @@ public class arrays_program {
 		for(int i : arr) { System.out.println(i);}
 	}
 
-	public static void to_list() {
+	@Test(enabled = false)
+	public void  to_list() {
 		Integer[] arr= {3,4,6,1,2,6,7,8,5,2};
 
 		System.out.println("Conversion of Array to list");
@@ -85,19 +85,10 @@ public class arrays_program {
 		for(Object i : obj) {	System.out.println(i);}
 	}
 
-	public static void sum_of_array() {
-		System.out.println("Sum of array");
-		Integer[] arr= {3,4,6,1,2,6,7,8,5,2};
-		int sum=0;
-
-		for(int i : arr) {
-			sum+=i;
-		}
-		System.out.println(sum);
-	}
 
 
-	public static void odd_even_in_array() {
+	@Test(enabled = false)
+	public void odd_even_in_array() {
 		System.out.println("Count of odd or even in numbers");
 		Integer[] arr= {3,4,6,1,2,6,7,8,5,2,};
 
@@ -116,21 +107,93 @@ public class arrays_program {
 	}
 
 
-	public static void finding_unique_in_array() {
-		Integer[] arr = {1,2,3,4,4,5,5,6,1,8};
 
-		System.out.println("Finding unique number in array");
-
-		for(int i =0 ;i<=arr.length-1 ; i++) {
-			int n=0;
-
-			for(int j=0;j<=arr.length-1; j++) {
-				if(arr[i]==arr[j]);
-				n++;
-				if(n>=2);
-				break;
-			}
-
+	@Test(enabled = false)
+	public void sum_of_arrays(){
+		System.out.println("Sum of Arrays");
+		System.err.println("Type 1");
+		int[] arr = {1,3,5,7,9};
+		int sum =0;
+		for(int a : arr) {
+			sum +=a;
 		}
+		System.out.println(sum);
+
+
+		System.err.println("Type 2");
+		int sum2 = Arrays.stream(arr).sum();
+		System.out.println(sum2);
+
+		System.err.println("Type 3");
+		int sum3= IntStream.of(arr).sum();
+		System.out.println(sum3);
+
+
+		System.err.println("Type 4");
+		int sum4= Arrays.stream(arr).parallel().sum();
+		System.out.println(sum4);
 	}
+
+	@Test(enabled =  true)
+	public void min_and_maximum() {
+		int [] arr= { 1,3,5,7,9,11,15,20};
+
+		System.out.println("Type 1");
+		int min1= Arrays.stream(arr).min().orElseThrow();
+		System.out.println(min1);
+		int max1= Arrays.stream(arr).max().orElseThrow();
+		System.out.println(max1);
+		double avg1= Arrays.stream(arr).average().orElseThrow();
+		System.out.println(avg1);
+
+
+		System.out.println("Type 2");
+		int max = arr[0];
+		int min = arr[0];
+		for(int num : arr) {
+			if(num>max) max=num;
+			if(num<min) min=num;
+		}
+
+		System.out.println(min);
+		System.out.println(max);
+
+		System.out.println("Type 3");
+		Arrays.sort(arr);
+		System.out.println(arr[0]);
+		System.out.println(arr[arr.length-1]);
+		double sum =0;
+		for(int a : arr) {
+			sum +=a;
+		}
+		System.out.println(sum/arr.length);
+
+
+		Integer [] arr2= { 1,3,5,7,9,11,15,20};
+		System.out.println("Type 4");
+		List<Integer> as_list = Arrays.asList(arr2);
+		int max4 = Collections.max(as_list);
+		int min4 = Collections.min(as_list);
+		System.out.println(min4);
+		System.out.println(max4);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

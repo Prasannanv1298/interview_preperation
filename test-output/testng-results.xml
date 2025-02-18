@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-11T10:10:30 IST" name="Default suite" finished-at="2025-02-11T10:10:30 IST" duration-ms="61">
+  <suite started-at="2025-02-14T21:50:16 IST" name="Default suite" finished-at="2025-02-14T21:50:16 IST" duration-ms="69">
     <groups>
     </groups>
-    <test started-at="2025-02-11T10:10:30 IST" name="Default test" finished-at="2025-02-11T10:10:30 IST" duration-ms="61">
-      <class name="java_practice.string_programs">
-        <test-method signature="reverse_the_sentance()[pri:0, instance:java_practice.string_programs@6a6cb05c]" started-at="2025-02-11T10:10:30 IST" name="reverse_the_sentance" finished-at="2025-02-11T10:10:30 IST" duration-ms="11" status="PASS">
+    <test started-at="2025-02-14T21:50:16 IST" name="Default test" finished-at="2025-02-14T21:50:16 IST" duration-ms="69">
+      <class name="Interview_Programs.arrays_program">
+        <test-method signature="min_and_maximum()[pri:0, instance:Interview_Programs.arrays_program@6025e1b6]" started-at="2025-02-14T21:50:16 IST" name="min_and_maximum" finished-at="2025-02-14T21:50:16 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reverse_the_sentance -->
-      </class> <!-- java_practice.string_programs -->
+        </test-method> <!-- min_and_maximum -->
+      </class> <!-- Interview_Programs.arrays_program -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
