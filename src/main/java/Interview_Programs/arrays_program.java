@@ -15,8 +15,9 @@ import org.testng.annotations.Test;
 
 public class arrays_program {
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void duplicate_in_array_using_set() {
+		System.out.println("Removing duplicats in array");
 		int[] arr = {1,2,3,4,5,4,3,4};
 		Set<Integer> common = new HashSet<Integer>();
 
@@ -31,6 +32,7 @@ public class arrays_program {
 
 	@Test(enabled = false)
 	public void common_values_in_two_array() {
+		System.out.println("Common values in two arrays");
 		int[] arr1 = {1,2,3,4,5};
 		int[] arr2 = {2,4,6,3,7,8};
 

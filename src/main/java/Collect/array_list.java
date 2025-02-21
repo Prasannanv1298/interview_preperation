@@ -62,7 +62,7 @@ public class array_list {
 		System.out.println(arr.reversed());
 		
 		
-		List<String> ret1 =  new ArrayList<String>(Arrays.asList("a1","a2", "a3", "a4","a5","qq"));
+		List<String> ret1 =  Arrays.asList("a1","a2", "a3", "a4","a5","qq");
 		List<String> ret2 =  new ArrayList<String>(Arrays.asList( "a4","a5","qq"));
 		System.out.println(ret1.retainAll(ret2));
 		System.out.println(ret1);

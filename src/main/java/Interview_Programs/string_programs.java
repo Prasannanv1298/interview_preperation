@@ -68,7 +68,7 @@ public class string_programs {
         }
 	}
 
-    @Test(enabled = false)
+    @Test(enabled = true)
 	public void reverse_the_sentance() {
 		String original = "My name is andy";
 		String[] original_split= original.split(" ");
