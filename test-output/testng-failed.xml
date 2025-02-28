@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="java_practice.string_programs">
+      <class name="java_practice.throw_throws_and_expectionhandling">
         <methods>
-          <include name="duplicate_words"/>
+          <include name="multiple_catch"/>
         </methods>
-      </class> <!-- java_practice.string_programs -->
+      </class> <!-- java_practice.throw_throws_and_expectionhandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

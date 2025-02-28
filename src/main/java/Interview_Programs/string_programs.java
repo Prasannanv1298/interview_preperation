@@ -68,7 +68,7 @@ public class string_programs {
         }
 	}
 
-    @Test(enabled = true)
+    @Test(enabled = false)
 	public void reverse_the_sentance() {
 		String original = "My name is andy";
 		String[] original_split= original.split(" ");
@@ -79,7 +79,7 @@ public class string_programs {
 		System.out.println(reverser_sentance);
 	}
 
-    @Test
+    @Test(enabled = false)
     public void reverse_word() {
     	String str = "Java is fun";
     	String reversed = String.join(" ", new StringBuilder(str).reverse().toString().split(" "));
@@ -87,9 +87,29 @@ public class string_programs {
     }
 
 
+    @Test(enabled = false)
+    public void sum_fo_string() {
+    	String val=" a12v34";
+    	int sum=0;
+    	for(char ch : val.toCharArray()) {
+    		if(Character.isDigit(ch)) {
+    			sum += Character.getNumericValue(ch);
+    		}
+    	}
+    	System.out.println(sum);
+    }
 
-
-
+    @Test(enabled = true)
+    public void sum_of_string_array() {
+    	String[] arr = {"1","5","4"};
+    	int sum =0;
+    	
+    	for(String val : arr) {
+    	int num = Integer.parseInt(val);
+    	sum += num;
+    	}
+    	System.out.println(sum);
+    }
 
 
 

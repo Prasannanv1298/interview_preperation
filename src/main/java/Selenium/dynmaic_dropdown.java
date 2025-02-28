@@ -15,6 +15,7 @@ public class dynmaic_dropdown {
             robot.keyPress(KeyEvent.VK_DOWN);
             robot.keyRelease(KeyEvent.VK_DOWN);
         }
+     
     }
 
     public void pressEnterkey() throws AWTException {

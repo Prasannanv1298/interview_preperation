@@ -32,12 +32,14 @@ public class throw_throws_and_expectionhandling {
 	}
 
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void multiple_catch() throws IOException{
 		try {
 			int[] numbers = {1, 2, 3};
 			System.out.println(numbers[5]); // ArrayIndexOutOfBoundsException
 		} catch (ArrayIndexOutOfBoundsException e) {
+			int[] numbers = {1, 2, 3};
+			System.out.println(numbers[5]);
 			System.out.println("Array index out of bounds: " + e.getMessage());
 		} catch (Exception e) {
 			System.out.println("General exception: " + e.getMessage());
@@ -60,13 +62,13 @@ public class throw_throws_and_expectionhandling {
 	}
 
 
-	@Test
+	@Test(enabled = false)
 	public void throww() {
 		throw new NullPointerException("Null Pointer is custmom exc");
 	}
 
 
-	@Test
+	@Test(enabled = false)
 	public void throwss() throws InvalidAgeException  {
 		int age =1;
 		if (age < 18) {
