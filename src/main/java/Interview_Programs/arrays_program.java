@@ -219,7 +219,6 @@ public class arrays_program {
 
 	public static void copy_of() {
 		int[] arr = {3,4,1,2};
-		
 
 		System.err.println("Copy of");
 		int[] a=Arrays.copyOf(arr, 7);
