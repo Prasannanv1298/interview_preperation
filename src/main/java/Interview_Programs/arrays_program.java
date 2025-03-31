@@ -137,7 +137,7 @@ public class arrays_program {
 	public void min_and_maximum() {
 		int [] arr= { 1,3,5,7,9,11,15,20};
 
-		
+
 		System.out.println("Type 1");
 		int min1= Arrays.stream(arr).min().orElseThrow();
 		System.out.println(min1);
@@ -179,7 +179,21 @@ public class arrays_program {
 	}
 
 
+	@Test(enabled =  true)
+	public void int_reverse() {
+		int[] a = {1, 5, 6, 7};
 
+		List<Integer> li = new ArrayList<Integer>();
+
+		for(int i=a.length-1; i>=0;i--) {
+			li.add(a[i]);
+		}
+
+		System.out.println(li);
+
+		Integer[] b = {1, 5, 6, 7};
+		Arrays.sort(b, Collections.reverseOrder());
+	}
 
 
 

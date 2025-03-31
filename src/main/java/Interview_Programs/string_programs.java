@@ -112,10 +112,21 @@ public class string_programs {
     }
 
 
-
-
-
-
+    public void reverse_even_words_insentance() {
+    	  String str = "I am an automation tester";
+          String[] str_split_arr= str.split(" ");
+          String org="";
+          
+          for(int i=0;i< str_split_arr.length; i++){
+              if((i+1)%2==0){
+                 org += new StringBuilder(str_split_arr[i]).reverse().toString()+" ";
+              }
+              else{
+                  org+=str_split_arr[i]+" ";
+              }
+          }
+          System.out.println(org);
+    }
 
 
 

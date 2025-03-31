@@ -4,7 +4,7 @@ public class this_super {
 
 	public static void main(String[] args) {
 		Child c = new Child();
-//		c.display();
+		//		c.display();
 		c.show();
 	}
 }
@@ -12,25 +12,25 @@ public class this_super {
 
 
 class Parent {
-    String name = "Parent";
+	String name = "Parent";
 
-    void display() {
-        System.out.println("Parent Display");
-    }	
+	void display() {
+		System.out.println("Parent Display");
+	}	
 }
 
 class Child extends Parent {
-    String name = "Child";
+	String name = "Child";
 
-    void display() {
-        System.out.println("Child Display");
-    }
+	void display() {
+		System.out.println("Child Display");
+	}
 
-    void show() {
-        System.out.println(this.name); // Refers to Child's name
-        System.out.println(super.name); // Refers to Parent's name
+	void show() {
+		System.out.println(this.name); // Refers to Child's name
+		System.out.println(super.name); // Refers to Parent's name
 
-        this.display(); // Calls Child's display
-        super.display(); // Calls Parent's display
-    }
+		this.display(); // Calls Child's display
+		super.display(); // Calls Parent's display
+	}
 }
