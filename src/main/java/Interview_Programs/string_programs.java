@@ -2,6 +2,7 @@ package Interview_Programs;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.testng.annotations.Test;
 
@@ -126,6 +127,29 @@ public class string_programs {
               }
           }
           System.out.println(org);
+    }
+    
+    
+    
+    public static void main(String[] args) {
+    	String str = "Big black rock, Black hair";
+    	String lower_str = str.toLowerCase();
+    	String splited_str[] = lower_str.split(" ");
+    	
+    	Map<String, Integer> count = new HashMap<String, Integer>();
+    	
+    	for(int i=0; i<splited_str.length;i++) {
+    		count.put(splited_str[i], count.getOrDefault(splited_str[i], 0)+1);
+    	}
+    	
+    	System.out.println(count);
+    	
+    	for(Entry<String, Integer> c : count.entrySet()) {
+    		if(c.getValue()>1) {
+    			System.out.println(c.getKey() +" "+c.getValue());
+    		}
+    	}
+    	
     }
 
 
